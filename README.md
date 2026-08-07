@@ -1,2 +1,2 @@
 # How Much Do Global Geopolitical Conflicts Cost India? Evidence from Crude Oil Imports Using Counterfactual Time Series Analysis
-This readme file contains instructions about how to replicate the figures, results and tables.
+This readme file contains instructions about how to replicate the figures, results and tables. In this paper, we use time series data of crude oil import quantity, price of crude oil in international market and USD to INR exchange rate. All of these data are collected from CEIC website (https://insights.ceicdata.com/). The data are then preprocessed as described in the paper. The preprocessed data are provided in this repository.
