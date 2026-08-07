@@ -1,4 +1,5 @@
 # How Much Do Global Geopolitical Conflicts Cost India? Evidence from Crude Oil Imports Using Counterfactual Time Series Analysis
 This readme file contains instructions about how to replicate the figures, results and tables. In this paper, we use time series data of crude oil import quantity, price of crude oil in international market and USD to INR exchange rate. All of these data are collected from CEIC website (https://insights.ceicdata.com/). The data are then preprocessed as described in the paper. The preprocessed data are provided in this repository. The process to replicate each table and figure are provided below.
 1. **Table 1, Figure 1 - Figure 6, Table 2, Table 3**: Open the "R Codes - 1.R" file. Import the dataset file named "Oil Import Data - 1.csv". Keep running each code block. Each result will be generated one by one.
-2. **Table5, Table 7, Table 9**:
+2. **Table 5, Table 7, Table 9**: Open the "R Codes - 2.R" file. For each event, import the dataset named "Oil Import Data - 2.csv". Keep running each code block. Each result will be generated one by one.
+**Table 4, Table 6, Table 8**: Table 4 is calculated manually in hand. Table 6 and 8 are manually constructed using the results of Table 5 and 7 respectively.
