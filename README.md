@@ -1,8 +1,24 @@
 # How Much Do Global Geopolitical Conflicts Cost India? Evidence from Crude Oil Imports Using Counterfactual Time Series Analysis
-This readme file contains instructions about how to replicate the figures, results and tables. In this paper, we use time series data of crude oil import quantity, price of crude oil in international market and USD to INR exchange rate. All of these data are collected from CEIC website (https://insights.ceicdata.com/). The data are then preprocessed as described in the paper. The preprocessed data are provided in this repository. The process to replicate each table and figure are provided below.
-1. **Table 1, Figure 1 - Figure 6, Table 2, Table 3**: Open the "R Codes - 1.R" file. Import the dataset file named "Oil Import Data - 1.csv". Keep running each code block. Each result will be generated one by one.
-2. **Table 5, Table 7, Table 9**: Open the "R Codes - 2.R" file. For each event, import the dataset named "Oil Import Data - 2.csv". Keep running each code block. Each result will be generated one by one.
-3. **Table 4, Table 6, Table 8**: Table 4 is calculated manually in hand. Table 6 and 8 are manually constructed using the results of Table 5 and 7 respectively.
-4. **Figure 7, Figure 8**: Open the "R Codes - 3.R" file. For each event, import the dataset named "Oil Import Data - 2.csv". Keep running each code block. Each figure will be generated one by one.
-5. **Table 10, Table 12, Table 14**: Open the "R Codes - 4.R" file. For each event, import the dataset named "Oil Import Data - 2.csv". Keep running each code block. Each result will be generated one by one.
-6. **Table 11, Table 13**: Table 11 and 13 are manually constructed using the results of Table 10 and 12 respectively.
+
+This README file provides instructions for replicating the figures, results, and tables presented in the paper. The analysis uses time series data on crude oil import quantities, international crude oil prices, and the USD/INR exchange rate. All data were obtained from the CEIC website (https://insights.ceicdata.com/).
+
+The raw data were preprocessed as described in the paper, and the resulting preprocessed datasets are provided in this repository. The steps required to replicate each table and figure are described below.
+
+1. **Table 1, Figures 1–6, Table 2, and Table 3:**
+   Open the **"R Codes - 1.R"** file and import the dataset **"Oil Import Data - 1.csv"**. Run the code blocks sequentially. Each table and figure will be generated in the order in which the code is executed.
+
+2. **Tables 5, 7, and 9:**
+   Open the **"R Codes - 2.R"** file. For each event, import the dataset **"Oil Import Data - 2.csv"** and run the corresponding code blocks sequentially. The results for each table will be generated accordingly.
+
+3. **Tables 4, 6, and 8:**
+   Table 4 is calculated manually. Tables 6 and 8 are manually constructed using the results reported in Tables 5 and 7, respectively.
+
+4. **Figures 7 and 8:**
+   Open the **"R Codes - 3.R"** file. For each event, import the dataset **"Oil Import Data - 2.csv"** and run the corresponding code blocks sequentially. Each figure will be generated accordingly.
+
+5. **Tables 10, 12, and 14:**
+   Open the **"R Codes - 4.R"** file. For each event, import the dataset **"Oil Import Data - 2.csv"** and run the corresponding code blocks sequentially. The results for each table will be generated accordingly.
+
+6. **Tables 11 and 13:**
+   Tables 11 and 13 are manually constructed using the results reported in Tables 10 and 12, respectively.
+
