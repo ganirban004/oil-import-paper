@@ -4,3 +4,5 @@ This readme file contains instructions about how to replicate the figures, resul
 2. **Table 5, Table 7, Table 9**: Open the "R Codes - 2.R" file. For each event, import the dataset named "Oil Import Data - 2.csv". Keep running each code block. Each result will be generated one by one.
 3. **Table 4, Table 6, Table 8**: Table 4 is calculated manually in hand. Table 6 and 8 are manually constructed using the results of Table 5 and 7 respectively.
 4. **Figure 7, Figure 8**: Open the "R Codes - 3.R" file. For each event, import the dataset named "Oil Import Data - 2.csv". Keep running each code block. Each figure will be generated one by one.
+5. **Table 10, Table 12, Table 14**: Open the "R Codes - 4.R" file. For each event, import the dataset named "Oil Import Data - 2.csv". Keep running each code block. Each result will be generated one by one.
+6. 6. **Table 11, Table 13**: Table 11 and 13 are manually constructed using the results of Table 10 and 12 respectively.
