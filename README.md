@@ -8,7 +8,7 @@ The analysis uses time series data on crude oil import quantities, international
 
 ## Software:
 
-All data analyses in this paper were conducted using R version 4.6.1. An iteractive dashboard can be found in https://z9r906-anirban-ghosh.shinyapps.io/shiny_app/.
+An iteractive dashboard can be found in https://z9r906-anirban-ghosh.shinyapps.io/shiny_app/. All data analyses paper were conducted using R version 4.6.1.
 
 ## Instructions for Replication:
 
