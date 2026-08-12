@@ -128,8 +128,23 @@ Table2 <-
 
 Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
@@ -266,8 +281,23 @@ Table2 <-
 
 Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
@@ -403,8 +433,23 @@ Table2 <-
 
 #Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
@@ -540,8 +585,23 @@ Table2 <-
 
 #Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
@@ -677,8 +737,23 @@ Table2 <-
 
 #Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 

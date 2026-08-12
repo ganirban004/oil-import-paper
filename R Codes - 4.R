@@ -10,7 +10,7 @@ library(dplyr)
 library(forecast)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - Raju Sir.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 head(oil)
 
@@ -28,8 +28,7 @@ oil$Date <- as.Date(paste(oil$Year, oil$Month, "01"),
                     format="%Y %b %d")
 baseline <-
   oil %>%
-  filter(Date >= as.Date("2020-07-01"),
-         Date <= as.Date("2022-02-01"))
+  filter(Date <= as.Date("2022-02-01"))
 
 n_post <- sum(oil$Date > max(baseline$Date))
 
@@ -163,8 +162,23 @@ Table2 <-
 # 
 Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
@@ -182,7 +196,7 @@ library(dplyr)
 library(forecast)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - Raju Sir.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 head(oil)
 
@@ -200,8 +214,7 @@ oil$Date <- as.Date(paste(oil$Year, oil$Month, "01"),
                     format="%Y %b %d")
 baseline <-
   oil %>%
-  filter(Date >= as.Date("2024-03-01"),
-         Date <= as.Date("2026-02-01"))
+  filter(Date <= as.Date("2026-02-01"))
 
 n_post <- sum(oil$Date > max(baseline$Date))
 
@@ -335,8 +348,23 @@ Table2 <-
 # 
 Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
@@ -354,7 +382,7 @@ library(dplyr)
 library(forecast)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - Raju Sir.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 head(oil)
 
@@ -372,8 +400,7 @@ oil$Date <- as.Date(paste(oil$Year, oil$Month, "01"),
                     format="%Y %b %d")
 baseline <-
   oil %>%
-  filter(Date >= as.Date("2018-01-01"),
-         Date <= as.Date("2018-12-01"))
+  filter(Date <= as.Date("2018-12-01"))
 
 n_post <- sum(oil$Date > max(baseline$Date))
 
@@ -507,8 +534,23 @@ Table2 <-
 #
 # Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
@@ -526,7 +568,7 @@ library(dplyr)
 library(forecast)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - Raju Sir.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 head(oil)
 
@@ -544,8 +586,7 @@ oil$Date <- as.Date(paste(oil$Year, oil$Month, "01"),
                     format="%Y %b %d")
 baseline <-
   oil %>%
-  filter(Date >= as.Date("2019-03-01"),
-         Date <= as.Date("2020-02-01"))
+  filter(Date <= as.Date("2020-02-01"))
 
 n_post <- sum(oil$Date > max(baseline$Date))
 
@@ -679,15 +720,30 @@ Table2 <-
 #
 # Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 
 
 
 #########################
-## Post-war Stabilization: ARIMA Counterfactual
+## Pre-Iran USA Conflict: ARIMA Counterfactual
 ########################
 
 ########################################
@@ -698,7 +754,7 @@ library(dplyr)
 library(forecast)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - Raju Sir.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 head(oil)
 
@@ -716,8 +772,7 @@ oil$Date <- as.Date(paste(oil$Year, oil$Month, "01"),
                     format="%Y %b %d")
 baseline <-
   oil %>%
-  filter(Date >= as.Date("2022-01-01"),
-         Date <= as.Date("2022-12-01"))
+  filter(Date <= as.Date("2025-02-01"))
 
 n_post <- sum(oil$Date > max(baseline$Date))
 
@@ -816,8 +871,8 @@ oil %>%
 
 Table2 <-
   oil %>%
-  filter(Date >= as.Date("2023-01-01"),
-         Date <= as.Date("2023-12-01")) %>%
+  filter(Date >= as.Date("2025-03-01"),
+         Date <= as.Date("2026-02-01")) %>%
   
   transmute(
     
@@ -849,10 +904,27 @@ Table2 <-
 # 
 # Table2 <- rbind(Table2, total_row)
 #
-# Table2
+#Table2
 
-round(c(mean(Table2$QuantityEffect), mean(Table2$OilPriceEffect), mean(Table2$ExchangeRateEffect)), 2)
-round(c(sd(Table2$QuantityEffect), sd(Table2$OilPriceEffect), sd(Table2$ExchangeRateEffect)), 2)
+mean_qnty <- mean(Table2$QuantityEffect)
+mean_oil  <- mean(Table2$OilPriceEffect)
+mean_exr  <- mean(Table2$ExchangeRateEffect)
+mean_excost <- mean(Table2$TotalExtraCost)
+sd_qnty <- sd(Table2$QuantityEffect)
+sd_oil  <- sd(Table2$OilPriceEffect)
+sd_exr  <- sd(Table2$ExchangeRateEffect)
+sd_excost <- sd(Table2$TotalExtraCost)
+event <- data.frame(
+  `Qnty Effect` = sprintf("%0.2f (%0.2f)", mean_qnty, sd_qnty),
+  `Oil Price Effect` = sprintf("%0.2f (%0.2f)", mean_oil, sd_oil),
+  `ExR Effect` = sprintf("%0.2f (%0.2f)", mean_exr, sd_exr),
+  `Total Effect` = sprintf("%0.2f (%0.2f)", mean_excost, sd_excost),
+  check.names = FALSE
+)
+library(knitr)
+kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
+
+
 
 
 
