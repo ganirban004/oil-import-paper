@@ -162,10 +162,10 @@ Table2 <-
 # 
 Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -348,10 +348,10 @@ Table2 <-
 # 
 Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -534,10 +534,10 @@ Table2 <-
 #
 # Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -720,10 +720,10 @@ Table2 <-
 #
 # Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -906,10 +906,10 @@ Table2 <-
 #
 #Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)

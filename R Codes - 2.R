@@ -9,7 +9,7 @@ library(ggplot2)
 library(dplyr)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - 2.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 head(oil)
 
@@ -128,10 +128,10 @@ Table2 <-
 
 Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -162,7 +162,7 @@ library(ggplot2)
 library(dplyr)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - 2.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 tail(oil)
 
@@ -281,10 +281,10 @@ Table2 <-
 
 Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -314,7 +314,7 @@ library(ggplot2)
 library(dplyr)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - 2.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 tail(oil)
 
@@ -433,10 +433,10 @@ Table2 <-
 
 #Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -466,7 +466,7 @@ library(ggplot2)
 library(dplyr)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - 2.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 tail(oil)
 
@@ -585,10 +585,10 @@ Table2 <-
 
 #Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
@@ -608,7 +608,7 @@ kable(event, booktabs = FALSE, escape = FALSE, align = "cccc")
 
 
 #########################
-## Post-war Stabilization
+## Pre-Iran USA Conflict
 ########################
 
 ########################################
@@ -618,7 +618,7 @@ library(ggplot2)
 library(dplyr)
 
 # Read CSV file
-oil <- read.csv("Oil Import Data - 2.csv", header = TRUE)
+oil <- read.csv("Oil Import Data.csv", header = TRUE)
 oil <- na.omit(oil)
 head(oil)
 
@@ -636,8 +636,8 @@ oil$Date <- as.Date(paste(oil$Year, oil$Month, "01"),
                     format="%Y %b %d")
 baseline <-
   oil %>%
-  filter(Date >= as.Date("2022-01-01"),
-         Date <= as.Date("2022-12-01"))
+  filter(Date >= as.Date("2024-03-01"),
+         Date <= as.Date("2025-02-01"))
 
 Q0 <- mean(baseline$Barrels)
 P0 <- mean(baseline$Price)
@@ -714,8 +714,8 @@ oil %>%
 
 Table2 <-
   oil %>%
-  filter(Date >= as.Date("2023-01-01"),
-         Date <= as.Date("2023-12-01")) %>%
+  filter(Date >= as.Date("2025-03-01"),
+         Date <= as.Date("2026-02-01")) %>%
   
   transmute(
     
@@ -737,10 +737,10 @@ Table2 <-
 
 #Table2
 
-mean_qnty <- mean(Table2$QuantityEffect)
-mean_oil  <- mean(Table2$OilPriceEffect)
-mean_exr  <- mean(Table2$ExchangeRateEffect)
-mean_excost <- mean(Table2$TotalExtraCost)
+mean_qnty <- sum(Table2$QuantityEffect)
+mean_oil  <- sum(Table2$OilPriceEffect)
+mean_exr  <- sum(Table2$ExchangeRateEffect)
+mean_excost <- sum(Table2$TotalExtraCost)
 sd_qnty <- sd(Table2$QuantityEffect)
 sd_oil  <- sd(Table2$OilPriceEffect)
 sd_exr  <- sd(Table2$ExchangeRateEffect)
