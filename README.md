@@ -1,6 +1,6 @@
 # How Much Do Global Geopolitical Conflicts Cost India? Evidence from Crude Oil Imports Using Counterfactual Time Series Analysis
 
-This README file provides instructions for replicating the figures, results, and tables presented in the paper.
+This README file provides instructions for replicating the figures, results, and tables presented in the paper. To get the data and R codes, go to author's GitHub page: https://github.com/ganirban004/oil-import-paper.git. Then follow the instructions.
 
 ## Data:
 
